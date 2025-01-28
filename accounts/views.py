@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import get_object_or_404
 from django.http import JsonResponse
 from django.contrib.auth.models import User
 from .models import Account
@@ -12,7 +12,8 @@ def get_users(request):
     user_data = []
 
     for user in users:
-        account = user.account_set.all()
+        account = user.account  
+        
         user_data.append({
             "username": user.username,
             "email": user.email,
@@ -26,15 +27,13 @@ def get_users(request):
             "updatedAt": account.updatedAt,
         })
 
-    return JsonResponse(user_data, status=status.HTTP_200_OK)
-
+    return JsonResponse(user_data, safe=False, status=status.HTTP_200_OK)
 
 
 @api_view(['GET'])
 def get_user(request, user_id):
     user = get_object_or_404(User, pk=user_id)  
-    account = user.account 
-
+    account = user.account  
     user_data = {
         "username": user.username,
         "email": user.email,
