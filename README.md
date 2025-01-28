@@ -131,11 +131,3 @@ This project involves building a full-stack web application with a focus on crea
      ```bash
      npm start
      ```
-
----
-
-## Notes
-
-- Ensure all data is rendered from the database properly, and the frontend communicates with the backend via Axios.
-- The project will be graded individually based on each partner’s contribution. Ensure your work is thorough and complete.
-- Be mindful of the rules. Good luck, and may the best pair win!
