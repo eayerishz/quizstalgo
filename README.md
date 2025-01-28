@@ -2,19 +2,13 @@
 
 This project involves building a full-stack web application with a focus on creating both frontend and backend systems. The backend will manage user and product data, while the frontend will present the data in an interactive way for users. You will be working as a pair—one will handle the **Frontend** and the other will handle the **Backend**.
 
-## Rules
-
-- **No cheating in any form.**
-- **You are only allowed to communicate with your partner.**
-- **No lurking around the lab. If you have questions, I will visit your place.**
-- **You are allowed to use any AI tools, YouTube, or notes.**
-
 ## Backend Instructions
 
 ### Models
 
 1. **Accounts:**
    - Use the built-in user model (e.g., Django’s `User` model or another framework's equivalent).
+   - DjangoAdmin (username: quiz ; password: 123)
    
 2. **Products:**
    - The Product model should have the following fields:
