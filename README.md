@@ -1,5 +1,3 @@
-# README.md
-
 ## Project Overview
 
 This project involves building a full-stack web application with a focus on creating both frontend and backend systems. The backend will manage user and product data, while the frontend will present the data in an interactive way for users. You will be working as a pair—one will handle the **Frontend** and the other will handle the **Backend**.
