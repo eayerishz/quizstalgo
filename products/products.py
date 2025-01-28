@@ -1,4 +1,4 @@
-product = [
+products = [
     {
         "id": product.uuid,
         "name": product.name,
